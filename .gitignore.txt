@@ -1,0 +1,15 @@
+# Eclipse metadata (do not track this)
+.metadata/
+
+# Build output
+target/
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Ignore all class files
+*.class
