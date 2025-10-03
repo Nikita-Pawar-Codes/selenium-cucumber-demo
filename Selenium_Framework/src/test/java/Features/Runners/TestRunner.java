@@ -8,6 +8,12 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
     features = "src/test/java/Features",
     glue = "Steps"
+    plugin = {
+        "pretty",
+        "html:target/cucumber-html-report",
+        "json:target/cucumber.json",
+        "testng:target/testng-cucumber-reports/testng-results.xml"  // This line generates TestNG-compatible report
+    },
 )
 public class TestRunner {
 }
